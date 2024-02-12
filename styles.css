@@ -16,7 +16,7 @@ body {
 }
 
 .timer {
-    font-size: 2em; /* Taille de police pour le cadran numérique */
+    font-size: 4em; /* Taille de police pour le cadran numérique */
     margin: 20px 0;
 }
 
@@ -26,21 +26,22 @@ body {
 }
 
 .pad button {
-    font-size: 1.5em; /* Taille de police pour les boutons du pad */
-    padding: 10px; /* Ajoute un peu d'espace autour des boutons du pad */
+    font-size: 2em; /* Taille de police pour les boutons du pad */
+    padding: 15px; /* Ajoute un peu d'espace autour des boutons du pad */
     cursor: pointer;
-    margin: 5px; /* Espacement entre les boutons du pad */
+    margin: 10px; /* Espacement entre les boutons du pad */
 }
 
 .timer-controls {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 #startStopBtn {
     font-size: 1.2em; /* Taille de police pour les boutons Start et Reset */
     background-color: green;
     color: white;
+    padding: 10px 20px;
 }
 
 #startStopBtn.stop {
