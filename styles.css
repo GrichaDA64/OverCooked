@@ -1,0 +1,67 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.timer-container {
+    text-align: center;
+}
+
+.timer {
+    font-size: 6em;
+    margin: 20px 0;
+}
+
+.pad {
+    margin-bottom: 20px;
+}
+
+.pad-row {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    font-size: 3em;
+    padding: 20px 40px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.timer-controls {
+    display: flex;
+    justify-content: center;
+}
+
+#startStopBtn {
+    background-color: green;
+    color: white;
+}
+
+#startStopBtn.stop {
+    background-color: red;
+    color: white;
+}
+
+h1 {
+    font-size: 3em; /* Modifiez cette valeur pour ajuster la taille du titre */
+}
+
+
+button.green {
+    background-color: limegreen;
+}
+
+button.red {
+    background-color: tomato;
+    color: white;
+}
+
+
+#app-container {
+    transition: background-color 1s ease; /* Ajout de cette ligne pour la transition de couleur de fond */
+}
