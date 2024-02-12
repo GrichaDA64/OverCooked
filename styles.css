@@ -20,7 +20,7 @@ body {
 }
 
 .timer {
-    font-size: 4em; /* Taille de police pour le cadran numérique */
+    font-size: 6em; /* Taille de police pour le cadran numérique */
     margin: 1px 0;
 }
 
@@ -30,7 +30,7 @@ body {
 }
 
 .pad button {
-    font-size: 2em; /* Taille de police pour les boutons du pad */
+    font-size: 1.5em; /* Taille de police pour les boutons du pad */
     padding: 15px; /* Ajoute un peu d'espace autour des boutons du pad */
     cursor: pointer;
     margin: 10px; /* Espacement entre les boutons du pad */
