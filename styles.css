@@ -21,11 +21,11 @@ body {
 
 .timer {
     font-size: 4em; /* Taille de police pour le cadran numérique */
-    margin: 15px 0;
+    margin: 1px 0;
 }
 
 .pad {
-    margin-bottom: 10px;
+    margin-bottom: 1px;
     text-align: center; /* Centrer le contenu horizontalement */
 }
 
