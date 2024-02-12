@@ -15,6 +15,10 @@ body {
     padding: 10px; /* Ajoute un peu d'espace autour de votre application */
 }
 
+.timer-container img {
+    width: 100%; /* Ajustez la largeur de l'image selon vos besoins */
+}
+
 .timer {
     font-size: 4em; /* Taille de police pour le cadran numérique */
     margin: 20px 0;
