@@ -5,31 +5,31 @@ body {
     height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
+    font-size: 16px; /* Taille de police de base pour le corps du document */
 }
 
 .timer-container {
     text-align: center;
+    max-width: 400px; /* Largeur maximale de votre application */
+    margin: 0 auto; /* Centre l'application horizontalement */
+    padding: 10px; /* Ajoute un peu d'espace autour de votre application */
 }
 
 .timer {
-    font-size: 6em;
+    font-size: 2em; /* Taille de police pour le cadran numérique */
     margin: 20px 0;
 }
 
 .pad {
     margin-bottom: 20px;
+    text-align: center; /* Centrer le contenu horizontalement */
 }
 
-.pad-row {
-    display: flex;
-    justify-content: center;
-}
-
-button {
-    font-size: 3em;
-    padding: 20px 40px;
+.pad button {
+    font-size: 1.5em; /* Taille de police pour les boutons du pad */
+    padding: 10px; /* Ajoute un peu d'espace autour des boutons du pad */
     cursor: pointer;
-    margin: 10px;
+    margin: 5px; /* Espacement entre les boutons du pad */
 }
 
 .timer-controls {
@@ -38,6 +38,7 @@ button {
 }
 
 #startStopBtn {
+    font-size: 1.2em; /* Taille de police pour les boutons Start et Reset */
     background-color: green;
     color: white;
 }
@@ -48,9 +49,8 @@ button {
 }
 
 h1 {
-    font-size: 3em; /* Modifiez cette valeur pour ajuster la taille du titre */
+    font-size: 2em; /* Taille du titre ajustée pour l'adaptabilité */
 }
-
 
 button.green {
     background-color: limegreen;
@@ -60,7 +60,6 @@ button.red {
     background-color: tomato;
     color: white;
 }
-
 
 #app-container {
     transition: background-color 1s ease; /* Ajout de cette ligne pour la transition de couleur de fond */
