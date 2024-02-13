@@ -32,7 +32,7 @@ function checkAndHighlightDigit(digit) {
     const digitElement = document.getElementById(`digit-${digit}`);
     const appContainer = document.getElementById('app-container');
 
-    if (digit === B || digit === C || digit === D) {
+    if ((B >0 && digit === B) || digit === C || digit === D) {
         digitElement.classList.add('green');
         appContainer.style.backgroundColor = 'limegreen';
         playSound('ding.mp3');
@@ -91,7 +91,9 @@ function updateTimer() {
         clearInterval(interval);
         playSound('pouet.mp3');
         isTimerRunning = false;
-        document.getElementById('startStopBtn').innerText = 'Start';
+       const startStopBtn = document.getElementById('startStopBtn');
+    startStopBtn.innerText = 'Start';
+    startStopBtn.classList.remove('stop');
         return;
     }
 
@@ -110,7 +112,15 @@ function updateTimer() {
 }
 
 function updateDisplay() {
-    document.getElementById('minutes').innerText = minutes < 10 ? `${minutes}` : minutes;
+   // document.getElementById('minutes').innerText = minutes < 10 ? `${minutes}` : minutes;
+    // document.getElementById('seconds').innerText = seconds < 10 ? `0${seconds}` : seconds;
+     if (A === 0 && B === 0 && C === 0 && D === 0){
+document.getElementById('minutes').innerText = '00';
+} else if (isTimerRunning) {
+    document.getElementById('minutes').innerText = minutes < 1 ? `  ` : minutes < 10 ? `${minutes}` : minutes;
+} else {
+  document.getElementById('minutes').innerText = minutes < 10 ? `0${minutes}` : minutes;
+}
     document.getElementById('seconds').innerText = seconds < 10 ? `0${seconds}` : seconds;
 }
 
