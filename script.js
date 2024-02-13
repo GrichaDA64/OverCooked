@@ -70,6 +70,7 @@ function startStopTimer() {
 
 
 function resetTimer() {
+    if (!isTimerRunning) {
     clearInterval(interval);
     minutes = 0;
     seconds = 0;
@@ -82,6 +83,7 @@ function resetTimer() {
     startStopBtn.innerText = 'Start';
     startStopBtn.classList.remove('stop'); // Ajout de cette ligne
     updateDisplay();
+}
 }
 
 function updateTimer() {
