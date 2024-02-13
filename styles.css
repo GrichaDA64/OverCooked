@@ -67,5 +67,5 @@ button.red {
 }
 
 #app-container {
-    transition: background-color 1s ease; /* Ajout de cette ligne pour la transition de couleur de fond */
+    transition: background-color 0.3s ease; /* Ajout de cette ligne pour la transition de couleur de fond */
 }
